@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/mvc
+	http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+	http://www.springframework.org/schema/aop
+	http://www.springframework.org/schema/aop/spring-aop-3.1.xsd">
+	<!-- 配置SpringMVC -->
+	<!-- 1.开启SpringMVC注解模式 -->
+	<!-- 简化配置： (1)自动注册DefaultAnootationHandlerMapping,AnotationMethodHandlerAdapter 
+		(2)提供一些列：数据绑定，数字和日期的format @NumberFormat, @DateTimeFormat, xml,json默认读写支持 -->
+	<mvc:annotation-driven />
+
+	<!-- 2.静态资源默认servlet配置 (1)加入对静态资源的处理：js,gif,png (2)允许使用"/"做整体映射 -->
+	<mvc:default-servlet-handler />
+
+	<!-- 3.配置jsp 显示ViewResolver -->
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<!-- <property name="viewClass" value="org.springframework.web.servlet.view.JstlView" 
+			/> -->
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+
+	<!-- 4.扫描web相关的bean -->
+	<context:component-scan base-package="com.itran.cargosystem" />
+
+	<!-- start 国际化 -->
+
+	<!--配置国际化资源文件 -->
+	<bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basename" value="messages" />
+		<!-- 如果在国际化资源文件中找不到对应代码的信息，就用这个代码作为名称 -->
+		<property name="useCodeAsDefaultMessage" value="true" />
+	</bean>
+
+	<!-- 配置SessionLocaleResolver -->
+	<bean id="localeResolver"
+		class="org.springframework.web.servlet.i18n.SessionLocaleResolver">
+	</bean>
+	<!-- 配置CookieLocaleResolver -->
+	<!-- <bean id="localeResolver" class="org.springframework.web.servlet.i18n.CookieLocaleResolver" 
+		/> -->
+
+	<!--系统异常统一处理器-->
+	<bean class="com.itran.cargosystem.controller.resolver.SystemExceptionHandlerResolver"></bean>
+
+	<!-- 国际化操作拦截器 如果采用基于（请求/Session/Cookie）则必需配置 -->
+	<mvc:interceptors>
+		<bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
+		</bean>
+	</mvc:interceptors>
+	<!-- end 国际化 -->
+
+	<!--start aop(启动对@AspectJ注解的支持) -->
+	<!-- 基于类的代理将起作用（需要cglib库），设置为false或者这个属性被省略，那么标准的JDK 基于接口的代理 -->
+	<aop:aspectj-autoproxy proxy-target-class="true" />
+	<!--注入切面类 -->
+	<!--<bean id="systemLogAspect" class="com.itran.oms.util.log.SystemLogAspect"></bean> -->
+	<!-- end aop -->
+
+	<!--start aop(启动xml的配置方式) -->
+	<!--<bean id="xmlHandler" class="com.itran.cargosystem.service.log.SystemLogAspect" />
+	<aop:config>
+		<aop:aspect id="com.itran.cargosystem.aspect" ref="xmlHandler">
+			<aop:pointcut id="controllerAspect"
+				expression="execution (* com.itran.cargosystem.controller..*(..))" />
+			<aop:before method="doBefore" pointcut-ref="controllerAspect" />
+			<aop:after method="doAfter" pointcut-ref="controllerAspect" />
+			&lt;!&ndash;<aop:around method="doAround" pointcut-ref="controllerAspect" />&ndash;&gt;
+			<aop:after-returning method="doReturn"
+				pointcut-ref="controllerAspect" />
+			<aop:after-throwing method="doThrowing" throwing="ex"
+				pointcut-ref="controllerAspect" />
+		</aop:aspect>
+	</aop:config>-->
+	<!-- end aop -->
+	
+</beans>

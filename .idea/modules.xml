@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cargo-common/cargo-common.iml" filepath="$PROJECT_DIR$/cargo-common/cargo-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cargo-config/cargo-config.iml" filepath="$PROJECT_DIR$/cargo-config/cargo-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cargo-dao/cargo-dao.iml" filepath="$PROJECT_DIR$/cargo-dao/cargo-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cargo-domain/cargo-domain.iml" filepath="$PROJECT_DIR$/cargo-domain/cargo-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cargo-service/cargo-service.iml" filepath="$PROJECT_DIR$/cargo-service/cargo-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cargo-web/cargo-web.iml" filepath="$PROJECT_DIR$/cargo-web/cargo-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cargo-web2/cargo-web2.iml" filepath="$PROJECT_DIR$/cargo-web2/cargo-web2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cargoSystem-root.iml" filepath="$PROJECT_DIR$/cargoSystem-root.iml" />
+    </modules>
+  </component>
+</project>

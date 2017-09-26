@@ -1,0 +1,127 @@
+.search-bar,.select-bar{
+	width: 20rem;
+	padding-top: 0.2rem;
+	float: right;
+}
+.select-bar{
+	margin-right: 2rem;
+}
+.select-bar .input-group-addon{
+	background-color:#2e6da4;
+	color:#ffffff;
+	border:0.1rem solid #2e6da4;
+	border-radius:0 10rem 10rem 0;
+}
+.select-bar input{
+	border-radius:10rem 0 0 10rem;
+}
+.search-bar .input-group-addon{
+	background-color:#2e6da4;
+	color:#ffffff;
+	border:0.1rem solid #2e6da4;
+}
+#FlightContent{
+	width: 100%;
+	height: 100%;
+}
+
+#FlightContent .table thead{
+	background-image: url('../images/bg.png');
+	background-repeat: repeat-x;
+	background-size: 100% 100%;
+}
+#FlightContent .table thead th{
+	color: #ffffff;
+	text-align: center;
+}
+#FlightContent .table thead .classify th:nth-child(2){
+	border-left: 0.3rem solid #ffffff;
+	border-right: 0.3rem solid #ffffff;
+}
+
+#FlightContent .table thead .classify th{
+	font-size: 1.6rem;
+}
+
+#FlightContent .table thead .thead th{
+	font-size: 1.2rem;
+	height:4rem;
+	font-size: 1.2rem;
+	-webkit-transform:scale(0.8);
+	border-bottom: none;
+}
+#FlightContent .table thead .thead th:nth-child(8){
+	border-left: 0.1rem solid #ffffff;
+}
+#FlightContent .table thead .thead th:nth-child(11){
+	border-right: 0.1rem solid #ffffff;
+}
+#FlightContent .table thead .thead th.odd-num{
+	margin-top:-2rem;
+}
+
+#FlightContent .table tbody tr:nth-child(2n+1){
+	background-color: #6d6d77;
+}
+#FlightContent .table tbody tr:nth-child(2n){
+	background-color: #4b4d58;
+}
+#FlightContent .table tbody tr:hover{
+	border-top: 0.1rem solid red;
+	border-bottom: 0.1rem solid red;
+}
+#FlightContent .table td{
+	text-align: center;
+	color: #ffffff;
+	font-size: 1.2rem;
+	border-top: none;
+	-webkit-transform:scale(0.8);
+}
+#FlightContent .table td:nth-child(8){
+	border-left: 0.1rem solid #ffffff;
+}
+#FlightContent .table td:nth-child(11){
+	border-right: 0.1rem solid #ffffff;
+}
+
+.fav{
+	color: #ed2e2e;
+}
+#Footer{
+	display: flex;
+	flex-direction: row;
+}
+#Footer .btn-group{
+	width: 400px;
+}
+#Footer .mequre{
+	flex:1;
+	height:100%;
+}
+#Footer .btn {
+	width: 15rem;
+	height: 100%;
+	border-radius: 0;
+	background-color: #6d6d77;
+	color:#ffffff;
+}
+#Footer .btn-active{
+	background-color: #4b4d58;
+}
+#Footer .btn-group{
+	height: 100%;
+}
+#Affiche{
+	color: #ffffff;
+	line-height: 3rem;
+	height: 2.5rem;
+}
+.label-red{
+	color: #f04949;
+}
+.label-green{
+	color: #65ff0c;
+}
+.label-yellow{
+	color: yellow;
+}

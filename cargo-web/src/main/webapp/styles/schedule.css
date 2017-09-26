@@ -1,0 +1,159 @@
+.opt .bar{
+	float: left;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.opt .select-bar button{
+	width: 10rem;
+	border-radius: 5rem;
+	padding: 0.5rem;	
+	margin-top: .3rem;
+	background-color: #5995ae;
+	color: #fff;
+}
+.opt .search-bar input{
+	width: 10rem;
+	padding: .5rem;
+	border-radius: 5rem;
+}
+.opt .search-bar button{
+	width: 5rem;
+	border-radius: 5rem;
+	padding: 0.5rem;	
+	margin-top: .3rem;
+	background-color: #5995ae;
+	color: #fff;
+}
+.name-span{
+	display: none;
+}
+
+#FlightContent{
+	width: 100%;
+	height: 100%;
+}
+#FlightContent .content-header{
+	width: 100%;
+	height: 3.5rem;
+	position: absolute;
+	color: #fff;
+	text-align: center;
+	font-size: 1.8rem;
+	line-height: 3.5rem;
+	border-top: .1rem solid #c5c5c5;
+	border-bottom: .1rem solid #c5c5c5;
+	background-color: #545454;
+	position: fixed;
+	margin-top:-.2rem;
+}
+#FlightContent .content-body{
+	width: 100%;
+	height: 93%;
+	padding-top: 3.5rem;
+}
+/*
+ 主体内容
+ */
+.table-header{
+	width: 100%;
+	background-color: red;
+	position: fixed;
+}
+.table-header table{
+	width: 100%;
+}
+.table-header table th{
+	height: 2rem;
+	line-height: 1.5rem;
+	background-color: #4a4c58;
+	border:.1rem solid #fff;
+	color:#fff;
+}
+
+.table-body{
+	width: 100%;
+	padding-top: 4.2rem;
+}
+.table-body table{
+	width: 100%;
+}
+.table-body table td{
+	height: 3rem;
+	line-height: 1.5rem;
+	background-color: #4a4c58;
+	border:.1rem solid #fff;
+	color:#fff;
+	text-align: center;
+}
+.table-body table .status_0{
+}
+.table-body table .status_1{
+	background-color: #21910D !important;
+}
+.table-body table .status_2{
+	background-color: #F4EA1F !important;
+}
+.table-body table .status_3{
+	background-color: #FA0F0F !important;
+}
+#Footer{
+	box-sizing: border-box;
+	padding-left: .5rem;
+	color: #fff;	
+}
+#Footer input{
+	width: 3rem;
+	padding: .3rem;
+	margin-right: 1rem;
+}
+#Footer button{
+	width: 10rem;
+	padding: 0.3rem;	
+	margin-top: .5rem;
+	margin-left: 1rem;
+	background-color: #5995ae;
+	color: #fff;
+}
+
+
+#FlightContent .content-body table th input{
+	width: 3rem;
+	display: none;
+}
+#FlightContent .content-body table td input{
+	width: 3rem;
+	display: none;
+}
+#FlightContent .content-body table th span{
+	display: block;
+	width: 100%;
+	height:100%;
+	text-align: center;
+	cursor: pointer;
+	line-height: 2rem;
+}
+#FlightContent .content-body table td span{
+	display: block;
+	width: 100%;
+	height:100%;
+	text-align: center;
+	cursor: pointer;
+	line-height: 3rem;
+}
+
+.import-td{
+	background-color: #797979 !important;
+}
+.status-red{
+	color: #f04949;
+}
+.status-green{
+	color: #65ff0c;
+}
+.status-yellow{
+	color: yellow;
+}
+.static-column{
+	background-color: #797979;
+}

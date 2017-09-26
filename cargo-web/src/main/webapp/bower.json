@@ -1,0 +1,16 @@
+{
+  "name": "oms-v2",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "angular": "angularjs#^1.6.5",
+    "layer": "^3.0.3",
+    "laydate": "*",
+    "jquery.nicescroll": "^3.7.5",
+    "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "mocha": "^3.4.2"
+  }
+}

@@ -1,0 +1,112 @@
+/*
+Layout.css 
+系统布局样式
+ */
+html{
+	font-size: 10px;
+}
+body,html{
+	width: 100%;
+	height: 100%;
+}
+
+#Wrapper{
+	width: 100%;
+	height: 100%;
+	background-color: #545454;
+}
+
+#Header{
+	width: 100%;
+	height: 3.5rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	background-image: url('../images/bg.png');
+	background-repeat: repeat-x;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 0rem;
+}
+#Content{
+	width: 100%;
+	height: 100%;
+	padding-top: 3.7rem;
+	padding-bottom: 3.7rem;
+	box-sizing: border-box;
+}
+
+#Footer{
+	width: 100%;
+	height: 3.5rem;
+	position: absolute;
+	bottom: 0rem;
+	background-image: url('../images/bg.png');
+	background-repeat: repeat-x;
+	background-size: 100% 100%;
+}
+
+/*
+取消谷歌最小字体
+ */
+/* .classstyle{ -webkit-text-size-adjust:none; font-size:9px; }   */
+
+/*-- Header --*/
+.logo{
+  width: 15rem;
+  flex-grow: 0;
+  text-align: center;
+}
+.logo a{
+  font-size: 2rem;
+  color: #ffffff;
+  text-align: center;
+  line-height: 3.5rem;
+}
+.nav{
+  background-color: #333333;
+  border-radius: 3rem;
+  min-width: 25rem;
+}
+.clock{
+  flex-grow: 2;
+}
+
+.nav ul{
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  padding-top: .2rem;
+}
+.nav ul li{
+  display: inline-block;
+}
+.nav ul li a{
+  display: block;
+  padding: 0.8rem;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 0.2rem;
+}
+.nav ul li a:hover{
+  background-color: #999999;
+  border-radius: 3rem;
+}
+.nav ul li a.active{
+  background-color: #999999;
+  border-radius: 3rem;
+}
+
+.clock,.time{
+  text-align: center;
+  color: #ffffff;
+}
+.clock .time{
+  font-size: 2.5rem;
+}
+.clock .day{
+  font-size: 1.2rem;
+}
+/*-End Header-*/
+

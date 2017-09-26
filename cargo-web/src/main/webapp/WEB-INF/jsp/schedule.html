@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OMS--珠海货运系统</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/schedule.css">
+    <!-- endbuild -->
+</head>
+
+<body ng-app="OMS">
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div id="Wrapper">
+        <header id="Header">
+            <div class="logo">
+                <a href="#">OMS</a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a id="FlightDynamics" class="active" href="flightDynamics.html">航班动态</a></li>
+                    <li><a id="SpeedExplain" href="schedule.html">进度分解</a></li>
+                    <li><a id="Work" href="#!/b">工作统计</a></li>
+                    <li><a id="FlightDynamics" href="flightDynamics.html">菜单</a></li>
+                    <li><a id="FlightDynamics" href="flightDynamics.html">菜单</a></li>
+                </ul>
+            </div>
+            <div class="clock">
+                <div class="time">
+                    00:00
+                </div>
+                <div class="day">
+                    2016-6-14 星期一
+                </div>
+            </div>
+            <div class="opt">
+                
+                <div class="select-bar">
+                    <button type="button" class="btn btn-black">日期选择</button>
+                    <button type="button" class="btn btn-black">导出</button>
+                </div>
+                <div class="search-bar">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="请输入关键字">
+                        <span class="input-group-addon btn btn-primary">搜索</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="Content">
+            <div id="FlightContent">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th colspan="23">
+                                机坪调度室航班保障动态
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="2">值班主管</td>
+                            <td>
+                                <input type="text" class="td-input">
+                            </td>
+                            <td>
+                                <input type="text" class="td-input">
+                            </td>
+                            <td rowspan="2">
+                                <div style="margin-top:1.1rem;">机型</div>
+                            </td>
+                            <td rowspan="2">
+                                <div style="margin-top:1.1rem;">航段</div>
+                            </td>
+                            <td rowspan="2">
+                                <div style="margin-top:1.1rem;">机位</div>
+                            </td>
+                            <td rowspan="2">
+                                <div style="margin-top:0.5rem;">进港</div>
+                                <div>动态</div>
+                            </td>
+                            <td rowspan="2">
+                                <div style="margin-top:0.5rem;">出港</div>
+                                <div>动态</div>
+                            </td>
+                            <td rowspan="2">
+                                <div style="margin-top:0.5rem;">保障</div>
+                                <div>时间</div>
+                            </td>
+                            <td>值班调度</td>
+                            <td>
+                                <input type="text" class="td-input">
+                            </td>
+                            <td>
+                                <input type="text" class="td-input">
+                            </td>
+                            <td>
+                                <input type="text" class="td-input">
+                            </td>
+                            <td>机坪队长</td>
+                            <td>
+                                <input type="text" class="td-input">
+                            </td>
+                            <td>
+                                <input type="text" class="td-input">
+                            </td>
+                            <td>
+                                <input type="text" class="td-input">
+                            </td>
+                            <td>
+                                <input type="text" class="td-input">
+                            </td>
+                            <td>行李队长</td>
+                            <td>
+                                <input type="text" class="td-input">
+                            </td>
+                            <td>
+                                <input type="text" class="td-input">
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>序号</td>
+                            <td>任务</td>
+                            <td>航班号</td>
+                            <td>飞机号</td>
+                            <td class="td-fix">监装监卸</td>
+                            <td class="td-fix">吨位预配</td>
+                            <td class="td-fix">配载出机单</td>
+                            <td class="td-fix">货物出库</td>
+                            <td class="td-fix">航班到达</td>
+                            <td class="td-fix">开货舱门</td>
+                            <td class="td-fix">行李上盘</td>
+                            <td class="td-fix">开始装机</td>
+                            <td class="td-fix">行李出仓</td>
+                            <td class="td-fix">关货舱门</td>
+                            <td class="td-fix">货舱门二次开</td>
+                            <td class="td-fix">货舱门二次关</td>
+                            <td class="td-fix">备注</td>
+                        </tr>
+
+                        <tr class="data-tr">
+                            
+                            <td class="td-fix one-line">1</td>
+                            <td class="td-fix one-line">正</td>
+                            <td class="td-fix">
+                                <div>PM2363</div>
+                                <div>PM6244</div>
+                            </td>
+                            <td class="td-fix one-line">B1817</td>
+                            <td class="td-fix one-line">A320</td>
+                            <td class="td-fix one-line">渝-珠-郑</td>
+                            <td class="td-fix one-line">2</td>
+                            <td class="td-fix one-line">0805</td>
+                            <td class="td-fix one-line">0945</td>
+                            <td class="td-fix one-line">0950</td>
+                            <td class="td-fix one-line">詹姆斯</td>
+                            <td class="red one-line">0086</td>
+                            <td class="green one-line">0086</td>
+                            <td class="red one-line">0086</td>
+                            <td class="red one-line">0086</td>
+                            <td class="green one-line">0086</td>
+                            <td class="yellow one-line">0086</td>
+                            <td class="red one-line">0086</td>
+                            <td class="green one-line">0086</td>
+                            <td class="yellow one-line">0086</td>
+                            <td class="green one-line">0086</td>
+                            <td class="red one-line">0086</td>
+                            <td class="green one-line">0086</td>
+                        </tr>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <footer id="Footer">
+            <div class="input-group">
+                <select class="form-control" style="width:15rem;">
+                    <option value="1">请选择</option>
+                </select>
+                <span class="input-group-addon btn btn-primary">自动刷新</span>
+            </div>
+            <div class="mequre">
+            </div>
+        </footer>
+    </div>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+    (function(b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+            function() {
+                (b[l].q = b[l].q || []).push(arguments)
+            });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = 'https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+    </script>
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-route/angular-route.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap/js/affix.js"></script>
+    <script src="/bower_components/bootstrap/js/alert.js"></script>
+    <script src="/bower_components/bootstrap/js/dropdown.js"></script>
+    <script src="/bower_components/bootstrap/js/tooltip.js"></script>
+    <script src="/bower_components/bootstrap/js/modal.js"></script>
+    <script src="/bower_components/bootstrap/js/transition.js"></script>
+    <script src="/bower_components/bootstrap/js/button.js"></script>
+    <script src="/bower_components/bootstrap/js/popover.js"></script>
+    <script src="/bower_components/bootstrap/js/carousel.js"></script>
+    <script src="/bower_components/bootstrap/js/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap/js/collapse.js"></script>
+    <script src="/bower_components/bootstrap/js/tab.js"></script>
+    <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/app.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>
