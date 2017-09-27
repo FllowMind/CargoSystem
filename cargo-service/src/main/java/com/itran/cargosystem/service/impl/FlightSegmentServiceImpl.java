@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.itran.cargosystem.bean.FlightSegment;
+import com.itran.cargosystem.entity.FlightSegment;
 import com.itran.cargosystem.dao.CommonDao;
 import com.itran.cargosystem.dao.util.GeneralQueryParam;
 import com.itran.cargosystem.service.FlightSegmentService;

@@ -4,9 +4,9 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 
-import com.itran.cargosystem.bean.Employee;
-import com.itran.cargosystem.bean.vo.Result;
-import com.itran.cargosystem.service.log.Log;
+import com.itran.cargosystem.entity.Employee;
+import com.itran.cargosystem.entity.vo.Result;
+import com.itran.cargosystem.function.log.Log;
 import com.itran.cargosystem.service.EmployeeService;
 import com.itran.cargosystem.service.ExcelService;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;

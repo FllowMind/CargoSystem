@@ -15,6 +15,7 @@
         <module>cargo-domain</module>
         <module>cargo-web</module>
         <module>cargo-config</module>
+        <module>cargo-function</module>
     </modules>
 
 

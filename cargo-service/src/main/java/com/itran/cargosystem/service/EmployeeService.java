@@ -1,7 +1,7 @@
 package com.itran.cargosystem.service;
 
-import com.itran.cargosystem.bean.Employee;
-import com.itran.cargosystem.bean.vo.Result;
+import com.itran.cargosystem.entity.Employee;
+import com.itran.cargosystem.entity.vo.Result;
 
 import java.util.List;
 

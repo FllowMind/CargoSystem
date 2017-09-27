@@ -1,4 +1,4 @@
-import com.itran.cargosystem.bean.FlightSchedule;
+import com.itran.cargosystem.entity.FlightSchedule;
 import com.itran.cargosystem.service.FlightScheduleService;
 import org.junit.Test;
 

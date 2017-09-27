@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.itran.cargosystem.bean.FlightNote;
+import com.itran.cargosystem.entity.FlightNote;
 import com.itran.cargosystem.common.Cache.CacheMgr;
 import com.itran.cargosystem.common.util.CommonUtils;
 import com.itran.cargosystem.dao.CommonDao;

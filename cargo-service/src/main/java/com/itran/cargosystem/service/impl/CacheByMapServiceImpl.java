@@ -6,8 +6,8 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.itran.cargosystem.bean.FlightSegment;
-import com.itran.cargosystem.bean.vo.Flight;
+import com.itran.cargosystem.entity.FlightSegment;
+import com.itran.cargosystem.entity.vo.Flight;
 import com.itran.cargosystem.common.Cache.CacheMgr;
 import com.itran.cargosystem.service.CacheByMapService;
 import org.springframework.stereotype.Service;

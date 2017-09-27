@@ -1,7 +1,7 @@
 package com.itran.cargosystem.service;
 
 
-import com.itran.cargosystem.bean.vo.FlightDateVo;
+import com.itran.cargosystem.entity.vo.FlightDateVo;
 
 /**
 * 获取数据Service

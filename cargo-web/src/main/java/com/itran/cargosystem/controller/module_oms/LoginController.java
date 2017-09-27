@@ -6,7 +6,7 @@ import org.apache.shiro.authc.IncorrectCredentialsException;
 import org.apache.shiro.authc.UnknownAccountException;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import com.itran.cargosystem.service.log.Log;
+import com.itran.cargosystem.function.log.Log;
 
 @Controller
 public class LoginController {

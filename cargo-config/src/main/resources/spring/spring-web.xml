@@ -50,7 +50,7 @@
 		/> -->
 
 	<!--系统异常统一处理器-->
-	<bean class="com.itran.cargosystem.controller.resolver.SystemExceptionHandlerResolver"></bean>
+	<bean class="com.itran.cargosystem.function.resolver.SystemExceptionHandlerResolver"></bean>
 
 	<!-- 国际化操作拦截器 如果采用基于（请求/Session/Cookie）则必需配置 -->
 	<mvc:interceptors>

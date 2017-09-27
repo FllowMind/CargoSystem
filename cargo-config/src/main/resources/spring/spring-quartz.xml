@@ -21,7 +21,7 @@
 
 	
 	<!-- 每60秒获取动态数据   -->
-	<bean id="generateInterfaceDateQuartz" class="com.itran.cargosystem.controller.quartz.GenerateInterfaceDateQuartz"/>
+	<bean id="generateInterfaceDateQuartz" class="com.itran.cargosystem.function.quartz.GenerateInterfaceDateQuartz"/>
 	<bean id="generateInterfaceDateFactory" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
 		<property name="targetObject">
 			<ref local="generateInterfaceDateQuartz" />
@@ -43,7 +43,7 @@
 	</bean>
 	
 	<!-- 每月1号开始,每天一次  -->
-	<bean id="ClearMapCacheQuartz" class="com.itran.cargosystem.controller.quartz.ClearMapCacheQuartz"/>
+	<bean id="ClearMapCacheQuartz" class="com.itran.cargosystem.function.quartz.ClearMapCacheQuartz"/>
 	<bean id="ClearMapCacheFactory" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
 		<property name="targetObject">
 			<ref local="ClearMapCacheQuartz" />

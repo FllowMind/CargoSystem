@@ -1,6 +1,6 @@
 package com.itran.cargosystem.service;
 
-import com.itran.cargosystem.bean.FlightSchedule;
+import com.itran.cargosystem.entity.FlightSchedule;
 
 public interface FlightScheduleService {
     FlightSchedule queryFlightScheduleById(String id);

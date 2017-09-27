@@ -11,22 +11,16 @@
     <name>cargo-web</name>
     <url>http://maven.apache.org</url>
     <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>3.8.1</version>
-            <scope>test</scope>
-        </dependency>
 
         <dependency>
             <groupId>com.itran</groupId>
-            <artifactId>cargo-service</artifactId>
+            <artifactId>cargo-config</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
         <dependency>
             <groupId>com.itran</groupId>
-            <artifactId>cargo-config</artifactId>
+            <artifactId>cargo-function</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>

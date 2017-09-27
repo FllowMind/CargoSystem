@@ -1,6 +1,6 @@
 package com.itran.cargosystem.service.impl;
 
-import com.itran.cargosystem.bean.FlightSchedule;
+import com.itran.cargosystem.entity.FlightSchedule;
 import com.itran.cargosystem.dao.CommonDao;
 import com.itran.cargosystem.dao.mapper.FlightScheduleDao;
 import com.itran.cargosystem.dao.util.GeneralQueryParam;

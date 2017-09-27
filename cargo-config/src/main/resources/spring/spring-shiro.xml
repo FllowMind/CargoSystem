@@ -37,6 +37,6 @@
 		<property name="realm" ref="realm" />
 	</bean>
 	<!-- realm -->
-	<bean id="realm" class="com.itran.cargosystem.controller.shiro.Realm" />
+	<bean id="realm" class="com.itran.cargosystem.function.shiro.Realm" />
 
 </beans>

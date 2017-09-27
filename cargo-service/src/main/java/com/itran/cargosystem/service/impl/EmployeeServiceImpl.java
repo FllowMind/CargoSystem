@@ -5,8 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.itran.cargosystem.bean.Employee;
-import com.itran.cargosystem.bean.vo.Result;
+import com.itran.cargosystem.entity.Employee;
+import com.itran.cargosystem.entity.vo.Result;
 import com.itran.cargosystem.common.util.CommonUtils;
 import com.itran.cargosystem.dao.CommonDao;
 import com.itran.cargosystem.dao.mapper.EmployeeMapper;

@@ -1,10 +1,10 @@
 package com.itran.cargosystem.service.impl;
 
-import com.itran.cargosystem.bean.FlightNote;
-import com.itran.cargosystem.bean.FlightSegment;
-import com.itran.cargosystem.bean.vo.Flight;
-import com.itran.cargosystem.bean.vo.FlightDateVo;
-import com.itran.cargosystem.bean.vo.FlightMonitor;
+import com.itran.cargosystem.entity.FlightNote;
+import com.itran.cargosystem.entity.FlightSegment;
+import com.itran.cargosystem.entity.vo.Flight;
+import com.itran.cargosystem.entity.vo.FlightDateVo;
+import com.itran.cargosystem.entity.vo.FlightMonitor;
 import com.itran.cargosystem.common.Cache.CacheMgr;
 import com.itran.cargosystem.common.util.date.FormatTime;
 import com.itran.cargosystem.service.*;

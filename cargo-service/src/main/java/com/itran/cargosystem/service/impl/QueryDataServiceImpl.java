@@ -2,7 +2,7 @@ package com.itran.cargosystem.service.impl;
 
 import java.io.IOException;
 
-import com.itran.cargosystem.bean.vo.FlightDateVo;
+import com.itran.cargosystem.entity.vo.FlightDateVo;
 import com.itran.cargosystem.service.QueryDataService;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;

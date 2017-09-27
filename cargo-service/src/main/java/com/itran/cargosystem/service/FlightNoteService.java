@@ -1,7 +1,7 @@
 package com.itran.cargosystem.service;
 
 
-import com.itran.cargosystem.bean.FlightNote;
+import com.itran.cargosystem.entity.FlightNote;
 
 /**
 * 航班组备注Service

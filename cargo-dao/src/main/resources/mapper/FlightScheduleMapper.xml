@@ -4,13 +4,13 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.itran.cargosystem.dao.mapper.FlightScheduleDao">
 
-    <resultMap id="queryResult" type="com.itran.cargosystem.bean.FlightSchedule">
+    <resultMap id="queryResult" type="com.itran.cargosystem.entity.FlightSchedule">
         <id property="id" column="ID" jdbcType="VARCHAR"></id>
         <result property="flightNumber" column="FLIGHT_NUMBER" jdbcType="VARCHAR"></result>
        <!-- <association property="sub"  select="getFlightSchedule" column="SUB_ID" />-->
     </resultMap>
     
-    <resultMap id="queryFlight" type="com.itran.cargosystem.bean.FlightSchedule" extends="queryResult">
+    <resultMap id="queryFlight" type="com.itran.cargosystem.entity.FlightSchedule" extends="queryResult">
         <collection property="flightSchedules" column="SUB_ID" select="getFlightSchedule"></collection>
     </resultMap>
     

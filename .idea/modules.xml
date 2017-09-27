@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/cargo-config/cargo-config.iml" filepath="$PROJECT_DIR$/cargo-config/cargo-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/cargo-dao/cargo-dao.iml" filepath="$PROJECT_DIR$/cargo-dao/cargo-dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/cargo-domain/cargo-domain.iml" filepath="$PROJECT_DIR$/cargo-domain/cargo-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cargo-function/cargo-function.iml" filepath="$PROJECT_DIR$/cargo-function/cargo-function.iml" />
       <module fileurl="file://$PROJECT_DIR$/cargo-service/cargo-service.iml" filepath="$PROJECT_DIR$/cargo-service/cargo-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/cargo-web/cargo-web.iml" filepath="$PROJECT_DIR$/cargo-web/cargo-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/cargo-web2/cargo-web2.iml" filepath="$PROJECT_DIR$/cargo-web2/cargo-web2.iml" />

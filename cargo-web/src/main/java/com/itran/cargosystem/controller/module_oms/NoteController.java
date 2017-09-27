@@ -1,10 +1,10 @@
 package com.itran.cargosystem.controller.module_oms;
 
 
-import com.itran.cargosystem.bean.FlightNote;
-import com.itran.cargosystem.bean.vo.Result;
+import com.itran.cargosystem.entity.FlightNote;
+import com.itran.cargosystem.entity.vo.Result;
 import com.itran.cargosystem.service.FlightNoteService;
-import com.itran.cargosystem.service.log.Log;
+import com.itran.cargosystem.function.log.Log;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

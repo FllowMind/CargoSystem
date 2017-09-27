@@ -3,7 +3,7 @@
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.itran.cargosystem.dao.mapper.EmployeeMapper">
-	<select id="selectByDateAndPosition" resultType="com.itran.cargosystem.bean.Employee">
+	<select id="selectByDateAndPosition" resultType="com.itran.cargosystem.entity.Employee">
 		select * from employee 
 		<where>
 			date = #{date} and

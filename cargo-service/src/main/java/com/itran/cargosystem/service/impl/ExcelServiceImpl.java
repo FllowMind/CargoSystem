@@ -8,9 +8,9 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-import com.itran.cargosystem.bean.Employee;
-import com.itran.cargosystem.bean.vo.Flight;
-import com.itran.cargosystem.bean.vo.FlightDateVo;
+import com.itran.cargosystem.entity.Employee;
+import com.itran.cargosystem.entity.vo.Flight;
+import com.itran.cargosystem.entity.vo.FlightDateVo;
 import com.itran.cargosystem.common.util.CommonUtils;
 import com.itran.cargosystem.common.util.IniUtils;
 import com.itran.cargosystem.service.EmployeeService;

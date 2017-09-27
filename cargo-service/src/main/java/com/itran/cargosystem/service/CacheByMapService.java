@@ -1,7 +1,7 @@
 package com.itran.cargosystem.service;
 
-import com.itran.cargosystem.bean.FlightSegment;
-import com.itran.cargosystem.bean.vo.Flight;
+import com.itran.cargosystem.entity.FlightSegment;
+import com.itran.cargosystem.entity.vo.Flight;
 
 import java.util.List;
 

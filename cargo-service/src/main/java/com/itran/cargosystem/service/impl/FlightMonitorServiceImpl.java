@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import com.itran.cargosystem.bean.vo.FlightDateVo;
-import com.itran.cargosystem.bean.vo.FlightMonitor;
+import com.itran.cargosystem.entity.vo.FlightDateVo;
+import com.itran.cargosystem.entity.vo.FlightMonitor;
 import com.itran.cargosystem.common.util.josn.JosnUtil;
 import com.itran.cargosystem.service.FlightMonitorService;
 import com.itran.cargosystem.service.QueryDataService;
