@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itran.cargosystem.dao.module_oms.FlightScheduleDao">
+
+    <resultMap id="queryResult" type="com.itran.cargosystem.entity.FlightSchedule">
+        <id property="id" column="ID" jdbcType="VARCHAR"></id>
+        <result property="flightNumber" column="FLIGHT_NUMBER" jdbcType="VARCHAR"></result>
+       <!-- <association property="sub"  select="getFlightSchedule" column="SUB_ID" />-->
+    </resultMap>
+    
+    <resultMap id="queryFlight" type="com.itran.cargosystem.entity.FlightSchedule" extends="queryResult">
+        <collection property="flightSchedules" column="SUB_ID" select="getFlightSchedule"></collection>
+    </resultMap>
+    
+    <select id="getFlightSchedule" resultMap="queryFlight" >
+             SELECT * from flight_schedule WHERE ID = #{id}
+    </select>
+</mapper>

@@ -3,9 +3,9 @@ package com.itran.cargosystem.function.quartz;
 import com.itran.cargosystem.entity.vo.Flight;
 import com.itran.cargosystem.entity.vo.FlightDateVo;
 import com.itran.cargosystem.common.util.date.FormatTime;
-import com.itran.cargosystem.service.CacheByMapService;
-import com.itran.cargosystem.service.FlightSegmentService;
-import com.itran.cargosystem.service.SplicingDataService;
+import com.itran.cargosystem.service.module_oms.CacheByMapService;
+import com.itran.cargosystem.service.module_oms.FlightSegmentService;
+import com.itran.cargosystem.service.module_oms.SplicingDataService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.ArrayList;

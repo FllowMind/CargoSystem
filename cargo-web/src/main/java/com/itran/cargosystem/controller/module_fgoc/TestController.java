@@ -2,7 +2,7 @@ package com.itran.cargosystem.controller.module_fgoc;
 
 import com.itran.cargosystem.entity.FlightSchedule;
 import com.itran.cargosystem.controller.BaseController;
-import com.itran.cargosystem.service.FlightScheduleService;
+import com.itran.cargosystem.service.module_oms.FlightScheduleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

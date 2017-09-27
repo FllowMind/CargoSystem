@@ -19,9 +19,9 @@ public class LogAspect {
     private Logger logger = Logger.getLogger(this.getClass().getName());
     private Properties config;
 
-    @After(value = "execution(* com.itran.cargosystem.service.impl.*.add*(..))" +
-            "||execution(* com.itran.cargosystem.service.impl.*.remove*(..))" +
-            "||execution(* com.itran.cargosystem.service.impl.*.update*(..))")
+    @After(value = "execution(* com.itran.cargosystem.service.*.impl.*.add*(..))" +
+            "||execution(* com.itran.cargosystem.service.*.impl.*.remove*(..))" +
+            "||execution(* com.itran.cargosystem.service.*.impl.*.update*(..))")
     public void doAfter(JoinPoint jp) {
 
         System.out.println("*************************************************");

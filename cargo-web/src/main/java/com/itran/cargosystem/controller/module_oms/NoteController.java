@@ -3,7 +3,7 @@ package com.itran.cargosystem.controller.module_oms;
 
 import com.itran.cargosystem.entity.FlightNote;
 import com.itran.cargosystem.entity.vo.Result;
-import com.itran.cargosystem.service.FlightNoteService;
+import com.itran.cargosystem.service.module_oms.FlightNoteService;
 import com.itran.cargosystem.function.log.Log;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
